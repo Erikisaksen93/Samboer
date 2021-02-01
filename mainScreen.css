@@ -1,0 +1,97 @@
+#navigate {
+    width: 700px;
+    height: 90vh;
+    border: solid 1px black;
+}
+
+
+#points {
+    position: relative;
+    top: 50px;
+    left: 85px;
+    width: 500px;
+    height: 250px;
+    border: solid 1px black;
+}
+
+#points h2 {
+    font-size: 3em;
+    position: relative;
+    top: -30px;
+    left: 175px;
+}
+
+#firstName {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50px;
+    left: 55px;
+}
+
+#secondName {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50px;
+    left: 390px;
+}
+
+#firstPoints {
+    font-size: 5em;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+
+#secondPoints {
+    font-size: 5em;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 120px;
+    left: 375px;
+}
+
+/* #navigationButtons {
+    position: relative;
+    top: 200px;
+    left: 200px;
+
+}; */
+
+#navigationButtons button {
+    position: relative;
+    top: 100px;
+    left: 140px;
+    height: 60px;
+    margin: 30px;
+    width: 300px;
+    font-size: 2em;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+
+#log {
+    border: solid 1px black;
+    width: 700px;
+    height: 90vh;
+    position: relative;
+    left: 800px;
+    top: -937px;
+    overflow: scroll;
+}
+
+#log h2 {
+    position: relative;
+    left: 280px;
+    font-size: 3em;
+}
+
+.log {
+    font-size: 1.5em;
+    padding-left: 40px;
+}

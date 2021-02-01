@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test Suite</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.14.0.css">
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.14.0.js"></script>
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
+    
+    <script>
+
+        function mainScreenView() {}
+
+        function storeView() {}
+        
+        // teste for å se om det er mulig å kjøpe hvis man har nok poeng
+        QUnit.test('Person one buying items with enough points', function(assert) {
+            personOneBuyStoreItem(2)
+            const actual = model.points[0].points;
+            const expected = 22;
+            assert.equal(actual, expected)
+        });
+
+        QUnit.test('Person one attempts to buy items with not enough points', function(assert) {
+            personOneBuyStoreItem(0)
+            const actual = model.points[0].points;
+            const expected = 67;
+            assert.equal(actual, expected)
+        });
+
+        QUnit.test('Person two buying items with enough points', function(assert) {
+            personTwoBuyStoreItem(5)
+            const actual = model.points[1].points;
+            const expected = 879;
+            assert.deepEqual(actual, expected)
+        });
+
+        QUnit.test('Add item to store that costs less than 1 point', function(assert) {
+            // let selectedOne = false;
+            // let selectedTwo = false;
+            // let selectedBoth = true;
+            // let reward = 'test'
+            
+            addReward()
+            const actual = undefined;
+            const expected = 0;
+            assert.equal(actual, expected)
+        });
+
+        // QUnit.test('xxxxx', function(assert) {
+        //     const actual = personOneBuyStoreItem(10);
+        //     const expected = undefined;
+        //     assert.equal(actual, expected)
+        // });
+
+
+        
+
+
+
+        </script>
+
+</body>
+</html>
